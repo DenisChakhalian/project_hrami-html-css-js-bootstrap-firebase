@@ -1,5 +1,7 @@
 # project_hrami (html, css, js, bootstrap, firebase)
 
+###Development was carried out until 06/09/2021
+
 site link: https://hrami-8982c.web.app/
 
 how to open locally:
