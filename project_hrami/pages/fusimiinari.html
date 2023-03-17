@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Храм Фусімі Інарі</title>
+    <link rel="icon" href="../icon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.muicss.com/mui-latest/css/mui.min.css" rel="stylesheet" type="text/css"/>
+    <script src="https://cdn.muicss.com/mui-latest/js/mui.min.js"></script>
+</head>
+<body>
+<script src="../js/main.js"></script>
+<!--Скролл-->
+<div id="top" class="mr-3 mb-3">
+    <a href="#">
+        <img src="../img/up.png" alt="Вверх">
+    </a>
+</div>
+<!--Навигация-->
+<nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top position-fixed nav_ver_tt">
+    <div class="container-fluid">
+        <a href="../index.html" class="navbar-brand"><img src="../img/logo.png" alt="logo"></a>
+        <button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#ResponsiveNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="ResponsiveNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Головна</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Храми Японії</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#history" class="nav-link">Особливості</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link random">Випадковий храм</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link feedBack">Зворотній зв'язок</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link" id="modal-btn">Увійти</a>
+                    <a id="log-out" class="nav-link" style=" display: none; cursor: pointer" title="Вийти"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top position-fixed nav_ver_t">
+    <div class="container-fluid">
+        <a class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ResponsiveNav1"><img
+                src="../img/logo_menu.png" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ResponsiveNav1">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--        mobile version -->
+        <div class="collapse navbar-collapse" id="ResponsiveNav1">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a href="" class="nav-link">
+                        <img class="dropbtn" src="../img/one_menu.png">
+                    </a>
+                    <div id="myDropdown5" class="dropdown-content tokyo">
+                        <a href="./asakusa.html">Асакуса</a>
+                        <a href="./sensodzi.html">Сенсо-дзі</a>
+                        <a href="./yakuoin.html">Якуоін</a>
+                        <a href="./dzodzyodzi.html">Дзодзйо-дзі</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="" class="nav-link">
+                        <img class="dropbtn" src="../img/two_menu.png">
+                    </a>
+                    <div id="myDropdown6" class="dropdown-content kyoto">
+                        <a href="./kinkakudzi.html">Кінкаку-дзі</a>
+                        <a href="#">Фусімі Інарі</a>
+                        <a href="./yasakadzindza.html">Ясака-дзіндзя</a>
+                        <a href="./sandzusangendo.html">Сандзюсанген-до</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="" class="nav-link">
+                        <img class="dropbtn" src="../img/three_menu.png">
+                    </a>
+                    <div id="myDropdown7" class="dropdown-content nara">
+                        <a href="./kofukudzi.html">Кофуку-дзі</a>
+                        <a href="./kasugataicya.html">Касуга-тайся</a>
+                        <a href="./todaidzi.html">Тодай-дзі</a>
+                        <a href="./yakusidzi.html">Якусі-дзі</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown ">
+                    <a href="" class="nav-link">
+                        <img class="dropbtn" src="../img/four_menu.png">
+                    </a>
+                    <div id="myDropdown8" class="dropdown-content nikko">
+                        <a href="./tosegu.html">Нікко Тосе-гу</a>
+                        <a href="./rinnodzi.html">Рінно-дзі</a>
+                        <a href="./taiyunbe.html">Тайюнбе</a>
+                        <a href="./futara.html">Футара</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--Общий блок-->
+<div class="flex_div mt-4r">
+    <div class="con">
+        <!--        desktop version -->
+        <nav class="nav_ver" id="ResponsiveNav2">
+            <div class="dropdown">
+                <a><img class="dropbtn" src="../img/one_menu.png"></a>
+                <div id="myDropdown" class="dropdown-content tokyo">
+                    <a href="./asakusa.html">Асакуса</a>
+                    <a href="./sensodzi.html">Сенсо-дзі</a>
+                    <a href="./yakuoin.html">Якуоін</a>
+                    <a href="./dzodzyodzi.html">Дзодзйо-дзі</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a><img class="dropbtn" src="../img/two_menu.png"></a>
+                <div id="myDropdown2" class="dropdown-content kyoto">
+                    <a href="./kinkakudzi.html">Кінкаку-дзі</a>
+                    <a href="#">Фусімі Інарі</a>
+                    <a href="./yasakadzindza.html">Ясака-дзіндзя</a>
+                    <a href="./sandzusangendo.html">Сандзюсанген-до</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a><img class="dropbtn" src="../img/three_menu.png"></a>
+                <div id="myDropdown3" class="dropdown-content nara">
+                    <a href="./kofukudzi.html">Кофуку-дзі</a>
+                    <a href="./kasugataicya.html">Касуга-тайся</a>
+                    <a href="./todaidzi.html">Тодай-дзі</a>
+                    <a href="./yakusidzi.html">Якусі-дзі</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a><img class="dropbtn" src="../img/four_menu.png"></a>
+                <div id="myDropdown4" class="dropdown-content nikko">
+                    <a href="./tosegu.html">Нікко Тосе-гу</a>
+                    <a href="./rinnodzi.html">Рінно-дзі</a>
+                    <a href="./taiyunbe.html">Тайюнбе</a>
+                    <a href="./futara.html">Футара</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="boxer">
+        <!--Первый блок-->
+        <div class="row alert">
+            <div class="col-12 text-left ml-4">
+                <h1 class="display-4">Храм Фусімі Інарі</h1>
+            </div>
+        </div>
+        <hr>
+        <!--Второй блок-->
+        <div class="flex_div">
+            <div class="col-12 text-justify mt-4 text">
+                <p class="lead">
+                    Фусімі Інарі (яп. 伏見稲荷大社) - храмовий комплекс і головний храм богині Інарі, розташований в
+                    районі Фусімі міста Кіото.
+                </p>
+                <img class="zooming" src="../img/fusimiinari-1.jpg">
+                <ul>
+                    <li>Храмовий комплекс розташований на горі, що зветься Інарі, висотою 233 метри над рівнем моря, що
+                        включає в себе, крім головного святилища, безліч невеликих святилищ, розташованих на доріжках,
+                        що йдуть вгору по горі. Дорога до головного святилища має протяжність 4 кілометри. Шлях до
+                        вершини займає приблизно 2 години.
+                    </li>
+                    <li>Спочатку інарі «займалися» тільки рисом. Але вже з самих ранніх часів в Японії інарі вважалися
+                        покровителями торговців, ділків і виробників, які традиційно поклонялися хитрим божествам. Кожні
+                        з численних воріт-торі, через які потрібно пройти, піднімаючись до храму, були пожертвувані
+                        будь-яким бізнесменом.
+                    </li>
+                    <li>
+                        Назва походить від місцевості Фусімі, названої на честь однойменної гори та розташованій на
+                        південь від середньовічного Кіото. Храм отримав велику популярність, коли в 1072 році став
+                        місцем паломництва імператора. Найстаріші будівлі комплексу храмового комплексу датуються 711
+                        роком. Храм був перебудований в 816 році на прохання ченця Кукая.
+                    </li>
+                    <li>
+                        Під час війни років Онін весь комплекс храмів Фусімі згорів. На їх відновлення пішло близько
+                        тридцяти років; нову будівлю було освячено в 1499 році. У старому храмі трьом камі були
+                        присвячені окремі будівлі; в новому храмі п'ять камі шанувалися в одній будівлі. Також в новому
+                        святилище вперше побудували буддійський храм, а в спадкове священство включили клан Када. З 1871
+                        до 1946 року Фусімі Інарі отримав статус святилища стоїть в першому ряду святинь, підтримуваних
+                        японським урядом.
+                    </li>
+                </ul>
+                <p class="lead">
+                    Кажуть, що у цього популярного святилища налічується близько 32 тис. «Філій» по всій Японії.
+                </p>
+                <div class="d_map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6539.002670731828!2d135.77575087582048!3d34.969105205342984!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7b1aca1c753ae2e9!2z0KHQstGP0YLQuNC70LjRidC1INCk0YPRgdC40LzQuCDQmNC90LDRgNC4!5e0!3m2!1sru!2sua!4v1616260077645!5m2!1sru!2sua"
+                            width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="item_div mt-4">
+                <img class="img_h zooming" src="../img/fusimiinari-1.jpg">
+                <iframe class="map"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6539.002670731828!2d135.77575087582048!3d34.969105205342984!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7b1aca1c753ae2e9!2z0KHQstGP0YLQuNC70LjRidC1INCk0YPRgdC40LzQuCDQmNC90LDRgNC4!5e0!3m2!1sru!2sua!4v1616260077645!5m2!1sru!2sua"
+                        width="85%" height="200px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        <div id="comment" class="comment hide_comment">
+            <div id="counter">150</div>
+            <textarea maxlength="150" id="count" class="text_comm"></textarea>
+            <button type="button" class="btn btn-success">Надіслати</button>
+        </div>
+        <div id="comment_list"></div>
+    </div>
+</div>
+<!--Футер-->
+<footer class="container-fluid">
+    <div class="container-fluid">
+        <div class="row padding text-center">
+            <div class="col-12">
+                <h1>Контакти</h1>
+            </div>
+            <div class="col-12 social padding">
+                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://myaccount.google.com/" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+            </div>
+            <hr>
+            <div class="col-12">
+                <h6>2021 Денис Чахальян, з усіх питань пишіть на адресу
+                    denys.chakhalian@nure.ua</h6>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+</body>
+</html>

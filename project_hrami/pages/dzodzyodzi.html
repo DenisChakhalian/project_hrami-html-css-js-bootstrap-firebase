@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Храм Дзодзйо-дзі</title>
+    <link rel="icon" href="../icon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.muicss.com/mui-latest/css/mui.min.css" rel="stylesheet" type="text/css"/>
+    <script src="https://cdn.muicss.com/mui-latest/js/mui.min.js"></script>
+</head>
+<body>
+<script src="../js/main.js"></script>
+<!--Скролл-->
+<div id="top" class="mr-3 mb-3">
+    <a href="#">
+        <img src="../img/up.png" alt="Вверх">
+    </a>
+</div>
+<!--Навигация-->
+<nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top position-fixed nav_ver_tt">
+    <div class="container-fluid">
+        <a href="../index.html" class="navbar-brand"><img src="../img/logo.png" alt="logo"></a>
+        <button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#ResponsiveNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="ResponsiveNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Головна</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Храми Японії</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#history" class="nav-link">Особливості</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link random">Випадковий храм</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link feedBack">Зворотній зв'язок</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link" id="modal-btn">Увійти</a>
+                    <a id="log-out" class="nav-link" style=" display: none; cursor: pointer" title="Вийти"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top position-fixed nav_ver_t">
+    <div class="container-fluid">
+        <a class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ResponsiveNav1"><img
+                src="../img/logo_menu.png" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ResponsiveNav1">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--        mobile version -->
+        <div class="collapse navbar-collapse" id="ResponsiveNav1">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a href="" class="nav-link">
+                        <img class="dropbtn" src="../img/one_menu.png">
+                    </a>
+                    <div id="myDropdown5" class="dropdown-content tokyo">
+                        <a href="./asakusa.html">Асакуса</a>
+                        <a href="./sensodzi.html">Сенсо-дзі</a>
+                        <a href="./yakuoin.html">Якуоін</a>
+                        <a href="#">Дзодзйо-дзі</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="" class="nav-link">
+                        <img class="dropbtn" src="../img/two_menu.png">
+                    </a>
+                    <div id="myDropdown6" class="dropdown-content kyoto">
+                        <a href="./kinkakudzi.html">Кінкаку-дзі</a>
+                        <a href="./fusimiinari.html">Фусімі Інарі</a>
+                        <a href="./yasakadzindza.html">Ясака-дзіндзя</a>
+                        <a href="./sandzusangendo.html">Сандзюсанген-до</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="" class="nav-link">
+                        <img class="dropbtn" src="../img/three_menu.png">
+                    </a>
+                    <div id="myDropdown7" class="dropdown-content nara">
+                        <a href="./kofukudzi.html">Кофуку-дзі</a>
+                        <a href="./kasugataicya.html">Касуга-тайся</a>
+                        <a href="./todaidzi.html">Тодай-дзі</a>
+                        <a href="./yakusidzi.html">Якусі-дзі</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown ">
+                    <a href="" class="nav-link">
+                        <img class="dropbtn" src="../img/four_menu.png">
+                    </a>
+                    <div id="myDropdown8" class="dropdown-content nikko">
+                        <a href="./tosegu.html">Нікко Тосе-гу</a>
+                        <a href="./rinnodzi.html">Рінно-дзі</a>
+                        <a href="./taiyunbe.html">Тайюнбе</a>
+                        <a href="./futara.html">Футара</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--Общий блок-->
+<div class="flex_div mt-4r">
+    <div class="con">
+        <!--        desktop version -->
+        <nav class="nav_ver" id="ResponsiveNav2">
+            <div class="dropdown">
+                <a><img class="dropbtn" src="../img/one_menu.png"></a>
+                <div id="myDropdown" class="dropdown-content tokyo">
+                    <a href="./asakusa.html">Асакуса</a>
+                    <a href="./sensodzi.html">Сенсо-дзі</a>
+                    <a href="./yakuoin.html">Якуоін</a>
+                    <a href="#">Дзодзйо-дзі</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a><img class="dropbtn" src="../img/two_menu.png"></a>
+                <div id="myDropdown2" class="dropdown-content kyoto">
+                    <a href="./kinkakudzi.html">Кінкаку-дзі</a>
+                    <a href="./fusimiinari.html">Фусімі Інарі</a>
+                    <a href="./yasakadzindza.html">Ясака-дзіндзя</a>
+                    <a href="./sandzusangendo.html">Сандзюсанген-до</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a><img class="dropbtn" src="../img/three_menu.png"></a>
+                <div id="myDropdown3" class="dropdown-content nara">
+                    <a href="./kofukudzi.html">Кофуку-дзі</a>
+                    <a href="./kasugataicya.html">Касуга-тайся</a>
+                    <a href="./todaidzi.html">Тодай-дзі</a>
+                    <a href="./yakusidzi.html">Якусі-дзі</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a><img class="dropbtn" src="../img/four_menu.png"></a>
+                <div id="myDropdown4" class="dropdown-content nikko">
+                    <a href="./tosegu.html">Нікко Тосе-гу</a>
+                    <a href="./rinnodzi.html">Рінно-дзі</a>
+                    <a href="./taiyunbe.html">Тайюнбе</a>
+                    <a href="./futara.html">Футара</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="boxer">
+        <!--Первый блок-->
+        <div class="row alert">
+            <div class="col-12 text-left ml-4">
+                <h1 class="display-4">Храм Дзодзйо-дзі</h1>
+            </div>
+
+        </div>
+        <hr>
+        <!--Второй блок-->
+        <div class="flex_div">
+            <div class="col-12 text-justify mt-4 text">
+                <p class="lead">
+                    Храм Дзодзйо-дзі - основне святилище течії Дзьодо в японському буддизмі в регіон е Канто. Храм було
+                    зведено у 1393 році і перенесений на поточне місце в 1598 році Токугава Іеясу, який призначив
+                    Дзодзйо-дзі сімейним святилищем. Тут же знаходиться і мавзолей клану Токугава.
+                </p>
+                <img class="zooming" src="../img/dzodzyodzi-1.jpg">
+                <ul>
+                    <li>Дзодзйо-дзі також служив адміністративним ядром, саме звідси керувалися питання релігійного
+                        навчання і діяльності Дзьодо Сю. У наш час територія храму займає майже 850000 кв.м, на яких
+                        розміщено близько 48 невеликих храмів і близько 150 середніх шкіл. Тут проживають 3000
+                        священиків і послушників, які навчаються духовних основ. На жаль, час сегуната Токуґави
+                        закінчився, і з настанням епохи Мейдзі, почався період активної боротьби з буддизмом.
+                    </li>
+                    <li>Собори,
+                        храми і мавзолей сім'ї Токугава були спалені під час авіаатаки у Другій Світовій війні. Таким
+                        чином, можна побачити, що на Дзодзйо-дзі впливали і політичні та соціальні обставини. Сьогодні
+                        будівлі реконструйованого храму продовжують служити центром Дзьодо Сю і центральною семінарією
+                        для священиків. Більшість споруд храму реконструйовані, і лише вхідні ворота Сангендацумон
+                        змогли пережити пожежі, війни, міжусобиці і землетрусу і збереглися такими, якими їх побудували
+                        в 1622 році.
+                    </li>
+                    <li>
+                        Ворота висотою 21 метр і шириною 28 метрів величні і красиві. І до сих пір вважаються яскравим
+                        символом і прикладом архітектури періоду Едо. Назва «Сангендацумон» означає ворота, які позбавляють
+                        від трьох станів розуму - гніву, жадібності й тупості. Червоні, покриті лаком, ворота -
+                        двоярусні. На верхньому ярусі зберігаються ікони Сякямуні Будди, Самантабхадра і Мандзусрі
+                        Бодхісатви, а також зображення 16 учнів Будди, створене буддійськими скульпторами з Кіото під
+                        час будівництва Дзодзйо-дзі.
+                    </li>
+                </ul>
+                <p class="lead">
+                    Після того, як Іеясу став правити регіоном Канто на сході Японії, він ретельно охороняв Дзодзйо-дзі як
+                    насіннєве святилище. У міру того, як розростався місто Едо, реалізовувався і ряд інших великих
+                    проектів, в тому числі Дзодзйо-дзі. У мавзолеї поховані 6 сьогунів Токугава, імперська принцеса
+                    Кадзуномія (дружина сьогуна Іемоті), а також дружини і діти сьогунів. Зараз ці могили служать
+                    безсловесним нагадуванням про велич процвітаючого періоду Едо.</p>
+                <div class="d_map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3241.7935220585337!2d139.7467085451607!3d35.6574584694362!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x88a4a86ddb1dbd24!2z0JfQvtC00LfRkdC00LfQuA!5e0!3m2!1sru!2sua!4v1615487265795!5m2!1sru!2sua"
+                            width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="item_div mt-4">
+                <img class="img_h zooming" src="../img/dzodzyodzi-1.jpg">
+                <iframe class="map"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3241.7935220585337!2d139.7467085451607!3d35.6574584694362!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x88a4a86ddb1dbd24!2z0JfQvtC00LfRkdC00LfQuA!5e0!3m2!1sru!2sua!4v1615487265795!5m2!1sru!2sua"
+                        width="85%" height="200px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        <div id="comment" class="comment hide_comment">
+            <div id="counter">150</div>
+            <textarea maxlength="150" id="count" class="text_comm"></textarea>
+            <button type="button" class="btn btn-success">Надіслати</button>
+        </div>
+        <div id="comment_list"></div>
+    </div>
+</div>
+<!--Футер-->
+<footer class="container-fluid">
+    <div class="container-fluid">
+        <div class="row padding text-center">
+            <div class="col-12">
+                <h1>Контакти</h1>
+            </div>
+            <div class="col-12 social padding">
+                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://myaccount.google.com/" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+            </div>
+            <hr>
+            <div class="col-12">
+                <h6>2021 Денис Чахальян, з усіх питань пишіть на адресу
+                    denys.chakhalian@nure.ua</h6>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+</body>
+</html>

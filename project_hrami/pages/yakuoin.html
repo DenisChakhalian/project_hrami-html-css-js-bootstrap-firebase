@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Храм Якуоін</title>
+    <link rel="icon" href="../icon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.muicss.com/mui-latest/css/mui.min.css" rel="stylesheet" type="text/css"/>
+    <script src="https://cdn.muicss.com/mui-latest/js/mui.min.js"></script>
+</head>
+<body>
+<script src="../js/main.js"></script>
+<!--Скролл-->
+<div id="top" class="mr-3 mb-3">
+    <a href="#">
+        <img src="../img/up.png" alt="Вверх">
+    </a>
+</div>
+<!--Навигация-->
+<nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top position-fixed nav_ver_tt">
+    <div class="container-fluid">
+        <a href="../index.html" class="navbar-brand"><img src="../img/logo.png" alt="logo"></a>
+        <button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#ResponsiveNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="ResponsiveNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Головна</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Храми Японії</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#history" class="nav-link">Особливості</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link random">Випадковий храм</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link feedBack">Зворотній зв'язок</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link" id="modal-btn">Увійти</a>
+                    <a id="log-out" class="nav-link" style=" display: none; cursor: pointer" title="Вийти"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top position-fixed nav_ver_t">
+    <div class="container-fluid">
+        <a class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ResponsiveNav1"><img
+                src="../img/logo_menu.png" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ResponsiveNav1">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--        mobile version -->
+        <div class="collapse navbar-collapse" id="ResponsiveNav1">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a href="" class="nav-link">
+                        <img class="dropbtn" src="../img/one_menu.png">
+                    </a>
+                    <div id="myDropdown5" class="dropdown-content tokyo">
+                        <a href="./asakusa.html">Асакуса</a>
+                        <a href="./sensodzi.html">Сенсо-дзі</a>
+                        <a href="#">Якуоін</a>
+                        <a href="./dzodzyodzi.html">Дзодзйо-дзі</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="" class="nav-link">
+                        <img class="dropbtn" src="../img/two_menu.png">
+                    </a>
+                    <div id="myDropdown6" class="dropdown-content kyoto">
+                        <a href="./kinkakudzi.html">Кінкаку-дзі</a>
+                        <a href="./fusimiinari.html">Фусімі Інарі</a>
+                        <a href="./yasakadzindza.html">Ясака-дзіндзя</a>
+                        <a href="./sandzusangendo.html">Сандзюсанген-до</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="" class="nav-link">
+                        <img class="dropbtn" src="../img/three_menu.png">
+                    </a>
+                    <div id="myDropdown7" class="dropdown-content nara">
+                        <a href="./kofukudzi.html">Кофуку-дзі</a>
+                        <a href="./kasugataicya.html">Касуга-тайся</a>
+                        <a href="./todaidzi.html">Тодай-дзі</a>
+                        <a href="./yakusidzi.html">Якусі-дзі</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown ">
+                    <a href="" class="nav-link">
+                        <img class="dropbtn" src="../img/four_menu.png">
+                    </a>
+                    <div id="myDropdown8" class="dropdown-content nikko">
+                        <a href="./tosegu.html">Нікко Тосе-гу</a>
+                        <a href="./rinnodzi.html">Рінно-дзі</a>
+                        <a href="./taiyunbe.html">Тайюнбе</a>
+                        <a href="./futara.html">Футара</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--Общий блок-->
+<div class="flex_div mt-4r">
+    <div class="con">
+        <!--        desktop version -->
+        <nav class="nav_ver" id="ResponsiveNav2">
+            <div class="dropdown">
+                <a><img class="dropbtn" src="../img/one_menu.png"></a>
+                <div id="myDropdown" class="dropdown-content tokyo">
+                    <a href="./asakusa.html">Асакуса</a>
+                    <a href="./sensodzi.html">Сенсо-дзі</a>
+                    <a href="#">Якуоін</a>
+                    <a href="./dzodzyodzi.html">Дзодзйо-дзі</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a><img class="dropbtn" src="../img/two_menu.png"></a>
+                <div id="myDropdown2" class="dropdown-content kyoto">
+                    <a href="./kinkakudzi.html">Кінкаку-дзі</a>
+                    <a href="./fusimiinari.html">Фусімі Інарі</a>
+                    <a href="./yasakadzindza.html">Ясака-дзіндзя</a>
+                    <a href="./sandzusangendo.html">Сандзюсанген-до</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a><img class="dropbtn" src="../img/three_menu.png"></a>
+                <div id="myDropdown3" class="dropdown-content nara">
+                    <a href="./kofukudzi.html">Кофуку-дзі</a>
+                    <a href="./kasugataicya.html">Касуга-тайся</a>
+                    <a href="./todaidzi.html">Тодай-дзі</a>
+                    <a href="./yakusidzi.html">Якусі-дзі</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a><img class="dropbtn" src="../img/four_menu.png"></a>
+                <div id="myDropdown4" class="dropdown-content nikko">
+                    <a href="./tosegu.html">Нікко Тосе-гу</a>
+                    <a href="./rinnodzi.html">Рінно-дзі</a>
+                    <a href="./taiyunbe.html">Тайюнбе</a>
+                    <a href="./futara.html">Футара</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="boxer">
+        <!--Первый блок-->
+        <div class="row alert">
+            <div class="col-12 text-left ml-4">
+                <h1 class="display-4">Храм Якуоін</h1>
+            </div>
+        </div>
+        <hr>
+        <!--Второй блок-->
+        <div class="flex_div">
+            <div class="col-12 text-justify mt-4 text">
+                <p class="lead">
+                    Храм Якуоін - на схилі священної гори Такао-сан розташовано стародавнє синтоїстського храму Якуоін.
+                    Він був заснований в 744 році ченцем на ім'я Гёкі. Святилища загублені в густому лісі біля самої
+                    вершини, на висоті в 600 метрів над рівнем моря. Парк Такао - найближча до центрального Токіо
+                    куточок дикої природи. Він надзвичайно популярний у любителів гірських прогулянок , і одним з
+                    обов'язкових пунктів їх маршруту стає храм Якуоін.
+                </p>
+                <img class="zooming" src="../img/yakuoin-1.jpg">
+                <ul>
+                    <li>Колись це святилище було виключно синтоїстським: тут шанувалися Тенгу - боги гір з воронячими
+                        головами. Пізніше, з поширенням буддизму по території Японії, в Якуоін з'явилися і деякі
+                        елементи нової релігії. До сих пір традиційні кумирні мирно уживаються тут з буддійськими
+                        павільйонами.
+                    </li>
+                    <li>Вхід на територію храму відзначений вратами Йосінмон, неподалік від яких можна
+                        побачити стелу з вибитою в камені написом "вбивство заборонено". Цьому пам'ятника вже багато
+                        сотень років - околиці Такао-сан здавна перебували під захистом японських правителів.
+                    </li>
+                    <li>
+                        Найбільш цікаві будівлі - головний зал буддійського храму , прикрашений витонченою різьбою,
+                        яскраво-червона синтоїстське святилище і чайний будиночок Кисса Кобо Іппуку, де відвідувачі
+                        можуть перепочити за чашкою чаю з солодощами.
+                    </li>
+                </ul>
+                <p class="lead">
+                    На горі Такао-сан колись треіровалісь монахи-аскети ямабуси. У Якуоін дбайливо зберігають вікові
+                    традициии - всі бажаючі можуть долучитися до цієї непростої практиці. За 15 000 йен можна провести
+                    добу на території монастиря, вправляючись в медитації і аскезі. Вас чекає крижана вода гірської
+                    річки і читання сутр, а за окрему плату можна замовити вегетаріанські буддійські страви.
+                </p>
+                <div class="d_map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d810.7688887377786!2d139.2502875509262!3d35.625863844642225!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc0459eb21c1af97!2sYakuou-in!5e0!3m2!1sru!2sua!4v1615486681463!5m2!1sru!2sua"
+                            width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="item_div mt-4">
+                <img class="img_h zooming" src="../img/yakuoin-1.jpg">
+                <iframe class="map"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d810.7688887377786!2d139.2502875509262!3d35.625863844642225!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc0459eb21c1af97!2sYakuou-in!5e0!3m2!1sru!2sua!4v1615486681463!5m2!1sru!2sua"
+                        width="85%" height="200px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        <div id="comment" class="comment hide_comment">
+            <div id="counter">150</div>
+            <textarea maxlength="150" id="count" class="text_comm"></textarea>
+            <button type="button" class="btn btn-success">Надіслати</button>
+        </div>
+        <div id="comment_list"></div>
+    </div>
+</div>
+<!--Футер-->
+<footer class="container-fluid">
+    <div class="container-fluid">
+        <div class="row padding text-center">
+            <div class="col-12">
+                <h1>Контакти</h1>
+            </div>
+            <div class="col-12 social padding">
+                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://myaccount.google.com/" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+            </div>
+            <hr>
+            <div class="col-12">
+                <h6>2021 Денис Чахальян, з усіх питань пишіть на адресу
+                    denys.chakhalian@nure.ua</h6>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+</body>
+</html>

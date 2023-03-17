@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Храм Якусі-дзі</title>
+    <link rel="icon" href="../icon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.muicss.com/mui-latest/css/mui.min.css" rel="stylesheet" type="text/css"/>
+    <script src="https://cdn.muicss.com/mui-latest/js/mui.min.js"></script>
+</head>
+<body>
+<script src="../js/main.js"></script>
+<!--Скролл-->
+<div id="top" class="mr-3 mb-3">
+    <a href="#">
+        <img src="../img/up.png" alt="Вверх">
+    </a>
+</div>
+<!--Навигация-->
+<nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top position-fixed nav_ver_tt">
+    <div class="container-fluid">
+        <a href="../index.html" class="navbar-brand"><img src="../img/logo.png" alt="logo"></a>
+        <button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#ResponsiveNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="ResponsiveNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Головна</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Храми Японії</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#history" class="nav-link">Особливості</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link random">Випадковий храм</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link feedBack">Зворотній зв'язок</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link" id="modal-btn">Увійти</a>
+                    <a id="log-out" class="nav-link" style=" display: none; cursor: pointer" title="Вийти"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top position-fixed nav_ver_t">
+    <div class="container-fluid">
+        <a class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ResponsiveNav1"><img
+                src="../img/logo_menu.png" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ResponsiveNav1">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!--        mobile version -->
+        <div class="collapse navbar-collapse" id="ResponsiveNav1">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a href="" class="nav-link">
+                        <img class="dropbtn" src="../img/one_menu.png">
+                    </a>
+                    <div id="myDropdown5" class="dropdown-content tokyo">
+                        <a href="./asakusa.html">Асакуса</a>
+                        <a href="./sensodzi.html">Сенсо-дзі</a>
+                        <a href="./yakuoin.html">Якуоін</a>
+                        <a href="./dzodzyodzi.html">Дзодзйо-дзі</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="" class="nav-link">
+                        <img class="dropbtn" src="../img/two_menu.png">
+                    </a>
+                    <div id="myDropdown6" class="dropdown-content kyoto">
+                        <a href="./kinkakudzi.html">Кінкаку-дзі</a>
+                        <a href="./fusimiinari.html">Фусімі Інарі</a>
+                        <a href="./yasakadzindza.html">Ясака-дзіндзя</a>
+                        <a href="./sandzusangendo.html">Сандзюсанген-до</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="" class="nav-link">
+                        <img class="dropbtn" src="../img/three_menu.png">
+                    </a>
+                    <div id="myDropdown7" class="dropdown-content nara">
+                        <a href="./kofukudzi.html">Кофуку-дзі</a>
+                        <a href="./kasugataicya.html">Касуга-тайся</a>
+                        <a href="./todaidzi.html">Тодай-дзі</a>
+                        <a href="#">Якусі-дзі</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown ">
+                    <a href="" class="nav-link">
+                        <img class="dropbtn" src="../img/four_menu.png">
+                    </a>
+                    <div id="myDropdown8" class="dropdown-content nikko">
+                        <a href="./tosegu.html">Нікко Тосе-гу</a>
+                        <a href="./rinnodzi.html">Рінно-дзі</a>
+                        <a href="./taiyunbe.html">Тайюнбе</a>
+                        <a href="./futara.html">Футара</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--Общий блок-->
+<div class="flex_div mt-4r">
+    <div class="con">
+        <!--        desktop version -->
+        <nav class="nav_ver" id="ResponsiveNav2">
+            <div class="dropdown">
+                <a><img class="dropbtn" src="../img/one_menu.png"></a>
+                <div id="myDropdown" class="dropdown-content tokyo">
+                    <a href="./asakusa.html">Асакуса</a>
+                    <a href="./sensodzi.html">Сенсо-дзі</a>
+                    <a href="./yakuoin.html">Якуоін</a>
+                    <a href="./dzodzyodzi.html">Дзодзйо-дзі</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a><img class="dropbtn" src="../img/two_menu.png"></a>
+                <div id="myDropdown2" class="dropdown-content kyoto">
+                    <a href="./kinkakudzi.html">Кінкаку-дзі</a>
+                    <a href="./fusimiinari.html">Фусімі Інарі</a>
+                    <a href="./yasakadzindza.html">Ясака-дзіндзя</a>
+                    <a href="./sandzusangendo.html">Сандзюсанген-до</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a><img class="dropbtn" src="../img/three_menu.png"></a>
+                <div id="myDropdown3" class="dropdown-content nara">
+                    <a href="./kofukudzi.html">Кофуку-дзі</a>
+                    <a href="./kasugataicya.html">Касуга-тайся</a>
+                    <a href="./todaidzi.html">Тодай-дзі</a>
+                    <a href="#">Якусі-дзі</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a><img class="dropbtn" src="../img/four_menu.png"></a>
+                <div id="myDropdown4" class="dropdown-content nikko">
+                    <a href="./tosegu.html">Нікко Тосе-гу</a>
+                    <a href="./rinnodzi.html">Рінно-дзі</a>
+                    <a href="./taiyunbe.html">Тайюнбе</a>
+                    <a href="./futara.html">Футара</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="boxer">
+        <!--Первый блок-->
+        <div class="row alert">
+            <div class="col-12 text-left ml-4">
+                <h1 class="display-4">Храм Якусі-дзі</h1>
+            </div>
+
+        </div>
+        <hr>
+        <!--Второй блок-->
+        <div class="flex_div">
+            <div class="col-12 text-justify mt-4 text">
+                <p class="lead">
+                    Храм Якусі-дзі (яп. 薬師寺 Якусі-дзі) - один з найдавніших храмів Японії сьомого століття,
+                    видатний об'єкт всесвітньої спадщини ЮНЕСКО і "Історичний Пам'ятник стародавньої Нари".
+                </p>
+                <img class="zooming" src="../img/yakusidzi-1.jpg">
+                <ul>
+                    <li>У храмі строго симетричне планування з головними та лекційними залами, що стоять на центральній
+                        осі, між двома пагодами. Головний зал був відновлений в 1970-х роках, будучи зруйнованим
+                        пожежею, і
+                        розміщує трійцю божеств Якусі, шедевр японського буддистського мистецтва. Східна пагода - єдина
+                        споруда храму, яка пережила вогонь датується 730 року.
+                    </li>
+                    <li>Сьогодні це головний храм найдавнішої школи японського буддизму Хоссо. Головне божество, якому
+                        тут поклоняються Якусі Нерай, відомий як "Будда Медицини", одне з перших буддійських Божества,
+                        вчення про яку прийшло з Китаю до Японії в 680-ому році. Буддисти всього світу впевнені, що якщо
+                        з
+                        вірою доторкнутися до його зображенню, то можна зцілитися від будь-якої недуги як духовного так
+                        і фізичного. Божество, висотою 250 сантиметрів, сидить на домашньому вівтарі здоров'я замість
+                        традиційної квітки лотоса і є Національним Скарбом країни.
+                    </li>
+                    <li>
+                        Якусі-дзі цікавий і тим, що це перший храм того часу, у якого були Східні й Західні пагоди. На
+                        сьогоднішній день Східна пагода є єдиною оригінальною структурою 8-го століття 730 року, періоду
+                        Нари, дивом пережила пожежу, яка знищила Храмовий комплекс в 1528 року пагода досягає 34 метрів і є
+                        однією з найпрекрасніших в Японії, яскравий представник архітектури Хакухо періоду Тенпё
+                        (710-784 років). Східна пагода має всього три яруси, але бачиться шість через присутність доданих
+                        крил
+                        даху Мокоші, стиль рідкісний в архітектурі звучить як "Застигла музика" через вишуканої форми.
+                        Східна пагода була двічі на реконструкції в 1898-1900 роках та в 2012 році.
+                    </li>
+                </ul>
+                <p class="lead">
+                    У храмі розміщується прекрасна колекція буддистських предметів мистецтва, включаючи Триаду Якусі,
+                    Каннон і витончений живопис 8-го століття Кічідзо, яка є Національним Скарбом і виставляється тільки
+                    з 1-15 січня і з 8 жовтня до 10 листопада. Kічідзо є буддистською богинею миру, щастя і краси.</p>
+                <div class="d_map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3281.450217318765!2d135.78375130857765!3d34.66858503203623!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x870f22fa71820527!2z0K_QutGD0YHQuNC00LfQuA!5e0!3m2!1sru!2sua!4v1616497769359!5m2!1sru!2sua"
+                            width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            <div class="item_div mt-4">
+                <img class="img_h zooming" src="../img/yakusidzi-1.jpg">
+                <iframe class="map"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3281.450217318765!2d135.78375130857765!3d34.66858503203623!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x870f22fa71820527!2z0K_QutGD0YHQuNC00LfQuA!5e0!3m2!1sru!2sua!4v1616497769359!5m2!1sru!2sua"
+                        width="85%" height="200px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        <div id="comment" class="comment hide_comment">
+            <div id="counter">150</div>
+            <textarea maxlength="150" id="count" class="text_comm"></textarea>
+            <button type="button" class="btn btn-success">Надіслати</button>
+        </div>
+        <div id="comment_list"></div>
+    </div>
+</div>
+<!--Футер-->
+<footer class="container-fluid">
+    <div class="container-fluid">
+        <div class="row padding text-center">
+            <div class="col-12">
+                <h1>Контакти</h1>
+            </div>
+            <div class="col-12 social padding">
+                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://myaccount.google.com/" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+            </div>
+            <hr>
+            <div class="col-12">
+                <h6>2021 Денис Чахальян, з усіх питань пишіть на адресу
+                    denys.chakhalian@nure.ua</h6>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+
+</body>
+</html>
