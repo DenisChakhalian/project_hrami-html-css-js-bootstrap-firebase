@@ -1,6 +1,6 @@
 # project_hrami (html, css, js, bootstrap, firebase)
 
-### Development was carried out until 09 June 2021
+### Development was carried out until June 09 2021
 
 site link: https://hrami-8982c.web.app/
 
